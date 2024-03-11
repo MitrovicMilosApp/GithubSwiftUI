@@ -17,7 +17,7 @@ struct UserScreen: View {
                 if let user = viewModel.user {
                     UserDataView(user: user)
                     Button("Show repositories") {
-                        coordinator.push(.repositories)
+                        coordinator.push(.repositories(user: user))
                     }
                     .buttonStyle(.bordered)
                     .frame(width: 200)

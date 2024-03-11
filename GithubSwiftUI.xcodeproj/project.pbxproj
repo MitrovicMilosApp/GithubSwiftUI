@@ -43,6 +43,8 @@
 		25575FE42B9FA017000D74F2 /* UserScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FE32B9FA017000D74F2 /* UserScreen.swift */; };
 		25575FE62B9FA032000D74F2 /* UsernameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FE52B9FA032000D74F2 /* UsernameInputView.swift */; };
 		25575FE82B9FA043000D74F2 /* UserDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FE72B9FA043000D74F2 /* UserDataView.swift */; };
+		25575FEB2B9FA18B000D74F2 /* RepositoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FEA2B9FA18B000D74F2 /* RepositoriesListView.swift */; };
+		25575FED2B9FA1B6000D74F2 /* RepositoriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FEC2B9FA1B6000D74F2 /* RepositoriesListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		25575FE32B9FA017000D74F2 /* UserScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScreen.swift; sourceTree = "<group>"; };
 		25575FE52B9FA032000D74F2 /* UsernameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameInputView.swift; sourceTree = "<group>"; };
 		25575FE72B9FA043000D74F2 /* UserDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataView.swift; sourceTree = "<group>"; };
+		25575FEA2B9FA18B000D74F2 /* RepositoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListView.swift; sourceTree = "<group>"; };
+		25575FEC2B9FA1B6000D74F2 /* RepositoriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +271,7 @@
 			children = (
 				25575FD62B9F9E5E000D74F2 /* Coordinator */,
 				25575FDE2B9F9FB8000D74F2 /* User Screen */,
+				25575FE92B9FA17C000D74F2 /* Repositories Screen */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -297,6 +302,15 @@
 				25575FE72B9FA043000D74F2 /* UserDataView.swift */,
 			);
 			path = "User Screen";
+			sourceTree = "<group>";
+		};
+		25575FE92B9FA17C000D74F2 /* Repositories Screen */ = {
+			isa = PBXGroup;
+			children = (
+				25575FEA2B9FA18B000D74F2 /* RepositoriesListView.swift */,
+				25575FEC2B9FA1B6000D74F2 /* RepositoriesListViewModel.swift */,
+			);
+			path = "Repositories Screen";
 			sourceTree = "<group>";
 		};
 		25A239232B9F965900A67987 /* Domain Models */ = {
@@ -456,10 +470,12 @@
 				25575FE62B9FA032000D74F2 /* UsernameInputView.swift in Sources */,
 				25575FC72B9F9C0F000D74F2 /* GithubAPIPathProvider.swift in Sources */,
 				25575FD22B9F9D39000D74F2 /* GithubRepositoriesAPIService.swift in Sources */,
+				25575FED2B9FA1B6000D74F2 /* RepositoriesListViewModel.swift in Sources */,
 				25575FA22B9F9748000D74F2 /* GithubUserDTO.swift in Sources */,
 				253B91332B9F7E0E0094273A /* ContentView.swift in Sources */,
 				25575FBF2B9F9B05000D74F2 /* HTTPClient.swift in Sources */,
 				25575FA42B9F9758000D74F2 /* GithubRepositoryDTO.swift in Sources */,
+				25575FEB2B9FA18B000D74F2 /* RepositoriesListView.swift in Sources */,
 				25575FE42B9FA017000D74F2 /* UserScreen.swift in Sources */,
 				25575FC52B9F9BD5000D74F2 /* GithubRequestProvider.swift in Sources */,
 				25575FD42B9F9D4C000D74F2 /* GithubCommitAPIService.swift in Sources */,

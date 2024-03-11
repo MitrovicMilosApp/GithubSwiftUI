@@ -9,7 +9,7 @@ import SwiftUI
 
 enum Page: Identifiable, Hashable {
     case user
-    case repositories
+    case repositories(user: GithubUser)
     case commits
     
     var id: String {
@@ -51,8 +51,9 @@ class Coordinator: ObservableObject {
         case .user:
             let viewModel = dependencyProvider.userViewModel()
             UserScreen(viewModel: viewModel)
-        case .repositories:
-            Color.red
+        case .repositories(let user):
+            let viewModel = dependencyProvider.repositoriesListViewModel(user: user)
+            RepositoriesListView(viewModel: viewModel)
         case .commits:
             Color.yellow
         }

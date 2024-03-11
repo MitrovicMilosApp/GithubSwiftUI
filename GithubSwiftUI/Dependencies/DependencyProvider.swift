@@ -14,4 +14,8 @@ struct DependencyProvider {
         UserViewModel(userService: GithubUserAPIService(client: client))
     }
     
+    func repositoriesListViewModel(user: GithubUser) -> RepositoriesListViewModel {
+        RepositoriesListViewModel(user: user, repositoriesService: GithubRepositoriesAPIService(client: client))
+    }
+    
 }
