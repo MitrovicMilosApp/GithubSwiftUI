@@ -38,6 +38,11 @@
 		25575FD82B9F9E63000D74F2 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FD72B9F9E63000D74F2 /* Coordinator.swift */; };
 		25575FDB2B9F9EC0000D74F2 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FDA2B9F9EC0000D74F2 /* DependencyProvider.swift */; };
 		25575FDD2B9F9F21000D74F2 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FDC2B9F9F21000D74F2 /* CoordinatorView.swift */; };
+		25575FE02B9F9FE4000D74F2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FDF2B9F9FE4000D74F2 /* UserViewModel.swift */; };
+		25575FE22B9F9FFE000D74F2 /* GithubUsernameValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FE12B9F9FFE000D74F2 /* GithubUsernameValidator.swift */; };
+		25575FE42B9FA017000D74F2 /* UserScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FE32B9FA017000D74F2 /* UserScreen.swift */; };
+		25575FE62B9FA032000D74F2 /* UsernameInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FE52B9FA032000D74F2 /* UsernameInputView.swift */; };
+		25575FE82B9FA043000D74F2 /* UserDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FE72B9FA043000D74F2 /* UserDataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +97,11 @@
 		25575FD72B9F9E63000D74F2 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		25575FDA2B9F9EC0000D74F2 /* DependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
 		25575FDC2B9F9F21000D74F2 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
+		25575FDF2B9F9FE4000D74F2 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		25575FE12B9F9FFE000D74F2 /* GithubUsernameValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUsernameValidator.swift; sourceTree = "<group>"; };
+		25575FE32B9FA017000D74F2 /* UserScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserScreen.swift; sourceTree = "<group>"; };
+		25575FE52B9FA032000D74F2 /* UsernameInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameInputView.swift; sourceTree = "<group>"; };
+		25575FE72B9FA043000D74F2 /* UserDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +257,7 @@
 			children = (
 				25575FCD2B9F9CFD000D74F2 /* GithubResponseMapper.swift */,
 				25575FCF2B9F9D1A000D74F2 /* ErrorFactory.swift */,
+				25575FE12B9F9FFE000D74F2 /* GithubUsernameValidator.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -255,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				25575FD62B9F9E5E000D74F2 /* Coordinator */,
+				25575FDE2B9F9FB8000D74F2 /* User Screen */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -274,6 +286,17 @@
 				25575FDA2B9F9EC0000D74F2 /* DependencyProvider.swift */,
 			);
 			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		25575FDE2B9F9FB8000D74F2 /* User Screen */ = {
+			isa = PBXGroup;
+			children = (
+				25575FDF2B9F9FE4000D74F2 /* UserViewModel.swift */,
+				25575FE32B9FA017000D74F2 /* UserScreen.swift */,
+				25575FE52B9FA032000D74F2 /* UsernameInputView.swift */,
+				25575FE72B9FA043000D74F2 /* UserDataView.swift */,
+			);
+			path = "User Screen";
 			sourceTree = "<group>";
 		};
 		25A239232B9F965900A67987 /* Domain Models */ = {
@@ -426,22 +449,27 @@
 				25575FAD2B9F998C000D74F2 /* GithubUserService.swift in Sources */,
 				25575FBA2B9F9A1F000D74F2 /* GithubCommit.swift in Sources */,
 				25575FD82B9F9E63000D74F2 /* Coordinator.swift in Sources */,
+				25575FE22B9F9FFE000D74F2 /* GithubUsernameValidator.swift in Sources */,
 				25575FDD2B9F9F21000D74F2 /* CoordinatorView.swift in Sources */,
 				25575FCE2B9F9CFD000D74F2 /* GithubResponseMapper.swift in Sources */,
 				25575FC12B9F9B5A000D74F2 /* HTTPMethod.swift in Sources */,
+				25575FE62B9FA032000D74F2 /* UsernameInputView.swift in Sources */,
 				25575FC72B9F9C0F000D74F2 /* GithubAPIPathProvider.swift in Sources */,
 				25575FD22B9F9D39000D74F2 /* GithubRepositoriesAPIService.swift in Sources */,
 				25575FA22B9F9748000D74F2 /* GithubUserDTO.swift in Sources */,
 				253B91332B9F7E0E0094273A /* ContentView.swift in Sources */,
 				25575FBF2B9F9B05000D74F2 /* HTTPClient.swift in Sources */,
 				25575FA42B9F9758000D74F2 /* GithubRepositoryDTO.swift in Sources */,
+				25575FE42B9FA017000D74F2 /* UserScreen.swift in Sources */,
 				25575FC52B9F9BD5000D74F2 /* GithubRequestProvider.swift in Sources */,
 				25575FD42B9F9D4C000D74F2 /* GithubCommitAPIService.swift in Sources */,
 				25575FCB2B9F9CC4000D74F2 /* GithubUserAPIService.swift in Sources */,
 				25575FDB2B9F9EC0000D74F2 /* DependencyProvider.swift in Sources */,
+				25575FE82B9FA043000D74F2 /* UserDataView.swift in Sources */,
 				25575FC32B9F9B68000D74F2 /* APIError.swift in Sources */,
 				25575FAF2B9F999C000D74F2 /* GithubRepositoriesService.swift in Sources */,
 				253B91312B9F7E0E0094273A /* GithubSwiftUIApp.swift in Sources */,
+				25575FE02B9F9FE4000D74F2 /* UserViewModel.swift in Sources */,
 				25575FD02B9F9D1A000D74F2 /* ErrorFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

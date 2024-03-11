@@ -9,4 +9,9 @@ import Foundation
 
 struct DependencyProvider {
     private let client = URLSession.shared
+    
+    func userViewModel() -> UserViewModel {
+        UserViewModel(userService: GithubUserAPIService(client: client))
+    }
+    
 }

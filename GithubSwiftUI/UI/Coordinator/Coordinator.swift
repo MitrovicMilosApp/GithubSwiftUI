@@ -49,7 +49,8 @@ class Coordinator: ObservableObject {
     func build(page: Page) -> some View {
         switch page {
         case .user:
-            Color.blue
+            let viewModel = dependencyProvider.userViewModel()
+            UserScreen(viewModel: viewModel)
         case .repositories:
             Color.red
         case .commits:
