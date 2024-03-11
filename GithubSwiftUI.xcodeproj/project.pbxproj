@@ -195,13 +195,21 @@
 		25575FBD2B9F9AE4000D74F2 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				25575FC82B9F9C83000D74F2 /* Infrastructure */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		25575FC82B9F9C83000D74F2 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
 				25575FBE2B9F9B05000D74F2 /* HTTPClient.swift */,
 				25575FC02B9F9B5A000D74F2 /* HTTPMethod.swift */,
 				25575FC22B9F9B68000D74F2 /* APIError.swift */,
 				25575FC42B9F9BD5000D74F2 /* GithubRequestProvider.swift */,
 				25575FC62B9F9C0F000D74F2 /* GithubAPIPathProvider.swift */,
 			);
-			path = API;
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		25A239232B9F965900A67987 /* Domain Models */ = {
