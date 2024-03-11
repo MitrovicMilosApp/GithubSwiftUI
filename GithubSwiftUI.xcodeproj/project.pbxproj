@@ -18,6 +18,13 @@
 		25575FA42B9F9758000D74F2 /* GithubRepositoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FA32B9F9758000D74F2 /* GithubRepositoryDTO.swift */; };
 		25575FA62B9F9772000D74F2 /* GithubBranchDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FA52B9F9772000D74F2 /* GithubBranchDTO.swift */; };
 		25575FA82B9F9788000D74F2 /* GithubCommitDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FA72B9F9788000D74F2 /* GithubCommitDTO.swift */; };
+		25575FAD2B9F998C000D74F2 /* GithubUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FAC2B9F998C000D74F2 /* GithubUserService.swift */; };
+		25575FAF2B9F999C000D74F2 /* GithubRepositoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FAE2B9F999C000D74F2 /* GithubRepositoriesService.swift */; };
+		25575FB12B9F99AA000D74F2 /* GithubCommitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FB02B9F99AA000D74F2 /* GithubCommitService.swift */; };
+		25575FB42B9F99CD000D74F2 /* GithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FB32B9F99CD000D74F2 /* GithubUser.swift */; };
+		25575FB62B9F99FB000D74F2 /* GithubRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FB52B9F99FB000D74F2 /* GithubRepository.swift */; };
+		25575FB82B9F9A0F000D74F2 /* GithubBranch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FB72B9F9A0F000D74F2 /* GithubBranch.swift */; };
+		25575FBA2B9F9A1F000D74F2 /* GithubCommit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FB92B9F9A1F000D74F2 /* GithubCommit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,13 @@
 		25575FA32B9F9758000D74F2 /* GithubRepositoryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoryDTO.swift; sourceTree = "<group>"; };
 		25575FA52B9F9772000D74F2 /* GithubBranchDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubBranchDTO.swift; sourceTree = "<group>"; };
 		25575FA72B9F9788000D74F2 /* GithubCommitDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubCommitDTO.swift; sourceTree = "<group>"; };
+		25575FAC2B9F998C000D74F2 /* GithubUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserService.swift; sourceTree = "<group>"; };
+		25575FAE2B9F999C000D74F2 /* GithubRepositoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepositoriesService.swift; sourceTree = "<group>"; };
+		25575FB02B9F99AA000D74F2 /* GithubCommitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubCommitService.swift; sourceTree = "<group>"; };
+		25575FB32B9F99CD000D74F2 /* GithubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUser.swift; sourceTree = "<group>"; };
+		25575FB52B9F99FB000D74F2 /* GithubRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRepository.swift; sourceTree = "<group>"; };
+		25575FB72B9F9A0F000D74F2 /* GithubBranch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubBranch.swift; sourceTree = "<group>"; };
+		25575FB92B9F9A1F000D74F2 /* GithubCommit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubCommit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				25A239232B9F965900A67987 /* Domain Models */,
+				25575FA92B9F9910000D74F2 /* Business Logic */,
 				253B91302B9F7E0E0094273A /* GithubSwiftUIApp.swift */,
 				253B91322B9F7E0E0094273A /* ContentView.swift */,
 				253B91342B9F7E0F0094273A /* Assets.xcassets */,
@@ -134,6 +149,36 @@
 				253B914D2B9F7E0F0094273A /* GithubSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = GithubSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		25575FA92B9F9910000D74F2 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				25575FB22B9F99B9000D74F2 /* Entities */,
+				25575FBB2B9F9A46000D74F2 /* Services */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		25575FB22B9F99B9000D74F2 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				25575FB32B9F99CD000D74F2 /* GithubUser.swift */,
+				25575FB52B9F99FB000D74F2 /* GithubRepository.swift */,
+				25575FB72B9F9A0F000D74F2 /* GithubBranch.swift */,
+				25575FB92B9F9A1F000D74F2 /* GithubCommit.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		25575FBB2B9F9A46000D74F2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				25575FAC2B9F998C000D74F2 /* GithubUserService.swift */,
+				25575FAE2B9F999C000D74F2 /* GithubRepositoriesService.swift */,
+				25575FB02B9F99AA000D74F2 /* GithubCommitService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		25A239232B9F965900A67987 /* Domain Models */ = {
@@ -277,11 +322,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25575FB62B9F99FB000D74F2 /* GithubRepository.swift in Sources */,
 				25575FA62B9F9772000D74F2 /* GithubBranchDTO.swift in Sources */,
+				25575FB82B9F9A0F000D74F2 /* GithubBranch.swift in Sources */,
+				25575FB12B9F99AA000D74F2 /* GithubCommitService.swift in Sources */,
 				25575FA82B9F9788000D74F2 /* GithubCommitDTO.swift in Sources */,
+				25575FB42B9F99CD000D74F2 /* GithubUser.swift in Sources */,
+				25575FAD2B9F998C000D74F2 /* GithubUserService.swift in Sources */,
+				25575FBA2B9F9A1F000D74F2 /* GithubCommit.swift in Sources */,
 				25575FA22B9F9748000D74F2 /* GithubUserDTO.swift in Sources */,
 				253B91332B9F7E0E0094273A /* ContentView.swift in Sources */,
 				25575FA42B9F9758000D74F2 /* GithubRepositoryDTO.swift in Sources */,
+				25575FAF2B9F999C000D74F2 /* GithubRepositoriesService.swift in Sources */,
 				253B91312B9F7E0E0094273A /* GithubSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
