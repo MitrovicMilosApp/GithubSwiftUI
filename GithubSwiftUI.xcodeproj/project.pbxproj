@@ -45,6 +45,8 @@
 		25575FE82B9FA043000D74F2 /* UserDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FE72B9FA043000D74F2 /* UserDataView.swift */; };
 		25575FEB2B9FA18B000D74F2 /* RepositoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FEA2B9FA18B000D74F2 /* RepositoriesListView.swift */; };
 		25575FED2B9FA1B6000D74F2 /* RepositoriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FEC2B9FA1B6000D74F2 /* RepositoriesListViewModel.swift */; };
+		25575FF02B9FA30B000D74F2 /* CommitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FEF2B9FA30B000D74F2 /* CommitsView.swift */; };
+		25575FF22B9FA320000D74F2 /* CommitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25575FF12B9FA320000D74F2 /* CommitsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,8 @@
 		25575FE72B9FA043000D74F2 /* UserDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataView.swift; sourceTree = "<group>"; };
 		25575FEA2B9FA18B000D74F2 /* RepositoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListView.swift; sourceTree = "<group>"; };
 		25575FEC2B9FA1B6000D74F2 /* RepositoriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListViewModel.swift; sourceTree = "<group>"; };
+		25575FEF2B9FA30B000D74F2 /* CommitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsView.swift; sourceTree = "<group>"; };
+		25575FF12B9FA320000D74F2 /* CommitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +276,7 @@
 				25575FD62B9F9E5E000D74F2 /* Coordinator */,
 				25575FDE2B9F9FB8000D74F2 /* User Screen */,
 				25575FE92B9FA17C000D74F2 /* Repositories Screen */,
+				25575FEE2B9FA2F7000D74F2 /* Commits Screen */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -311,6 +316,15 @@
 				25575FEC2B9FA1B6000D74F2 /* RepositoriesListViewModel.swift */,
 			);
 			path = "Repositories Screen";
+			sourceTree = "<group>";
+		};
+		25575FEE2B9FA2F7000D74F2 /* Commits Screen */ = {
+			isa = PBXGroup;
+			children = (
+				25575FEF2B9FA30B000D74F2 /* CommitsView.swift */,
+				25575FF12B9FA320000D74F2 /* CommitsViewModel.swift */,
+			);
+			path = "Commits Screen";
 			sourceTree = "<group>";
 		};
 		25A239232B9F965900A67987 /* Domain Models */ = {
@@ -460,6 +474,7 @@
 				25575FB12B9F99AA000D74F2 /* GithubCommitService.swift in Sources */,
 				25575FA82B9F9788000D74F2 /* GithubCommitDTO.swift in Sources */,
 				25575FB42B9F99CD000D74F2 /* GithubUser.swift in Sources */,
+				25575FF22B9FA320000D74F2 /* CommitsViewModel.swift in Sources */,
 				25575FAD2B9F998C000D74F2 /* GithubUserService.swift in Sources */,
 				25575FBA2B9F9A1F000D74F2 /* GithubCommit.swift in Sources */,
 				25575FD82B9F9E63000D74F2 /* Coordinator.swift in Sources */,
@@ -479,6 +494,7 @@
 				25575FE42B9FA017000D74F2 /* UserScreen.swift in Sources */,
 				25575FC52B9F9BD5000D74F2 /* GithubRequestProvider.swift in Sources */,
 				25575FD42B9F9D4C000D74F2 /* GithubCommitAPIService.swift in Sources */,
+				25575FF02B9FA30B000D74F2 /* CommitsView.swift in Sources */,
 				25575FCB2B9F9CC4000D74F2 /* GithubUserAPIService.swift in Sources */,
 				25575FDB2B9F9EC0000D74F2 /* DependencyProvider.swift in Sources */,
 				25575FE82B9FA043000D74F2 /* UserDataView.swift in Sources */,

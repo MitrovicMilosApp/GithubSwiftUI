@@ -22,7 +22,7 @@ struct RepositoriesListView: View {
             } else {
                 List(viewModel.repositories, id: \.name) { repository in
                     Button(repository.name) {
-                        coordinator.push(.commits)
+                        coordinator.push(.commits(user: viewModel.user, repository: repository))
                     }
                 }
                 .navigationTitle("Repositories")

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GithubRepository: Codable {
+struct GithubRepository: Codable, Hashable {
     let name: String
     init(dtoObject: GithubRepositoryDTO) {
         self.name = dtoObject.name
