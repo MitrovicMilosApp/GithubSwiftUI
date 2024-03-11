@@ -10,6 +10,8 @@ import Combine
 
 class RepositoriesListViewModel: ObservableObject {
     
+    // NOTE: - I didn't have time to handle pagination, but that would be the next step.
+
     // Input
     @Published var page: Int = 1
     

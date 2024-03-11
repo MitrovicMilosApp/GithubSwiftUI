@@ -11,6 +11,9 @@ struct GithubAPIPathProvider {
     
     // NOTE: this could have been done using enum with associated values, however, this struct might need to be broken down and extended into separate files, which handled as an enum could break the open-closed principle. It is now separated in extensions for showcasing.
     
+    // NOTE: inside GithubRequestProvider we use predonditionFailure if any of these paths do not create URL. In a real wolrd scenario, I would either handle failure better, or I would make the paths into an enum and test the entire enum combined with the github username validator. That way we would ensure it always passes the precondition, while enum would force us to handle all of the cases, removing space for human error
+
+    
     private static let base = "https://api.github.com"
     private static func paginationQueryString(page: Int, pageSize: Int) -> String {
         "?page=\(page)&per_page=\(pageSize)"
